@@ -35,7 +35,11 @@ function askQuestion() {
 
 
 function gradeQuiz(candidateAnswers) {
-    console.log(`${candidateName}'s answers are ${candidateAnswers.join(", ")}. Correct answers are ${correctAnswers.join(", ")}.`)
+  for (i = 0; i < 5; i++) {
+    console.log(`${candidateName}'s answer is ${candidateAnswers[i]}. Correct answer is ${correctAnswers[i]}.`)
+  }
+    
+  
 
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
